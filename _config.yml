@@ -1,55 +1,46 @@
-defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
-  - scope:
-      path: "ar"
-      type: "pages" # previously `page` in Jekyll 2.2.
-    values:
-      layout: "default-ar" # overrides previous default layout
-      author: ""
-  - scope:
-      path: "en"
-      type: "pages" # previously `page` in Jekyll 2.2.
-    values:
-      layout: "default-en" # overrides previous default layout
-      author: ""
-
+---
+title: Test Siteleaf
+timezone: UTC
 collections:
-  - stores
-
-# Site URL's
+  posts:
+    title: Posts
+    output: true
+  stores:
+    title: Stores
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: default
+- scope:
+    path: ar
+    type: pages
+  values:
+    layout: default-ar
+    author: ''
+- scope:
+    path: en
+    type: pages
+  values:
+    layout: default-en
+    author: ''
 prod_url: test-forestry.meem.com.s3-website.ap-south-1.amazonaws.com
-#uat_url: http://indigo-eland.cloudvent.net/
-
 social-sitename-en: Meem Personal Banking
 social-sitename-ar: الخدمات المصرفية الشخصية ميم
-social-image-en: /resources/images/twitter/seo_twitter_cover/slide1.png
-social-image-ar: /resources/images/twitter/seo_twitter_cover/slide2.png
-
-
-# Analytics ID's
-#uat_google_analytics_id: UA-72224806-2
-#uat_google_tag_manager_id: GTM-NCWW46
-#uat_heap_analytics_id: 1475982962
-
-#prod_google_analytics_id: UA-72224806-1
-#prod_google_tag_manager_id: GTM-5XXDXR
-#prod_google_tag_manager_id: GTM-NCWW46
-#prod_heap_analytics_id: 2909756379
-
-# Google Custom Site Search
-#cloudcannon_google_cse_cx: 012444785599460374865:fwvovuvqnki
-#cloudcannon_dev_google_cse_cx: 012444785599460374865:mwf0rds5p1a
-#prod_google_cse_cx: 012444785599460374865:yxkkdvhfn9u
-
-#bing_id: CC60B461E8EA9A7B8D2C2DD9132730E9
-
+social-image-en: "/resources/images/twitter/seo_twitter_cover/slide1.png"
+social-image-ar: "/resources/images/twitter/seo_twitter_cover/slide2.png"
 sass:
   sass_dir: _sass
   style: compressed
-
-exclude: [html.iml,meem dev.iml,meem digital bank.iml,webchat-form.html,webchat-meem.js,webchat-working.js]
-
-excerpt_separator: ""
+exclude:
+- html.iml
+- meem dev.iml
+- meem digital bank.iml
+- webchat-form.html
+- webchat-meem.js
+- webchat-working.js
+excerpt_separator: 
