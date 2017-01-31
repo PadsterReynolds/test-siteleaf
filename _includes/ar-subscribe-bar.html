@@ -1,0 +1,23 @@
+<div class="newsletter2">
+    <div class="container">
+        {% for element in page.newsletter %}
+        <div class="one_half animate" data-anim-type="fadeInLeft" data-anim-delay="200">
+
+            <form action="https://meembygib.wufoo.eu/forms/rt70wmx1fyd1q6/#public" method="post" id="form4" name="form4" class="validate" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" novalidate>
+
+                <div style="position: absolute; right: -5000px;" aria-hidden="true">
+                    <input type="hidden" id="idstamp" name="idstamp" value="hXhAzcaAUiPbBp04bmUtURaOLnl39zSPYAvOLI/3eG8=" />
+                </div>
+                <div class="clear">
+                    <input id="saveForm" name="saveForm" class="button input_submit" type="submit" value="الاشتراك" />
+                </div>
+                <input id="Field2" name="Field2" type="text" class="required email enter_email_input" value="" maxlength="255" tabindex="1" onkeyup="" required />
+            </form>
+        </div>
+
+        <div class="one_half last animate" data-anim-type="fadeInRight" data-anim-delay="200">
+            <h2 class="">{{ element.subscribe-text }}</h2>
+        </div>
+        {% endfor %}
+    </div>
+</div>

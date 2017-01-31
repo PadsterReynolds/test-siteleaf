@@ -1,0 +1,12 @@
+_site
+.idea
+*.txt
+Thumbs.db
+*.iml
+.jekyll-metadata
+ar/test-layout.html
+en/test-layout.html
+.htaccessXXXX
+pagespeed.conf
+_drafts
+_data/locations
